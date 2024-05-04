@@ -1,12 +1,10 @@
 import React from 'react'
-import Sidebar from '../util/Sidebar'
+import FileUpload from '../FileUpload/FileUpload'
 
 
 function Home() {
     return (
-        <>
-            
-        </>
+        <FileUpload/>
     )
 }
 

@@ -5,30 +5,28 @@ import NavItems from './NavItems.jsx'
 function Sidebar() {
 
     return (
-        <div className='h-full w-2/12 flex flex-col pt-2 gap-5 bg-stone-100'>
+        <div className='h-full w-2/12 flex flex-col pt-2 gap-5 bg-stone-100 min-w-24'>
             <div className='flex flex-col gap-5 mt-10 p-2'>
-                <div>
-                    <NavItems
-                        content={"Home"}
-                        goto={"/"}
-                        type={"home"}
-                        
-                    />
-                </div>
+                <NavItems
+                    content={"Home"}
+                    goto={"/"}
+                    type={"home"}
+                    
+                />
                 
                 <NavItems
                     content={"Hostels"}
-                    goto={"/"}
+                    goto={"/hostels"}
                     type={"hostel"}
                 />
                 <NavItems
                     content={"About"}
-                    goto={"/"}
+                    goto={"/about"}
                     type={"about"}
                 />
                 <NavItems
-                    content={"Contacts"}
-                    goto={"/"}
+                    content={"Contact"}
+                    goto={"/contact"}
                     type={"contact"}
                 />
             </div>

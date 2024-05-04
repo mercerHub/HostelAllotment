@@ -4,13 +4,13 @@ import './index.css'
 import { createBrowserRouter , createRoutesFromElements, Route, RouterProvider} from 'react-router-dom'
 import Home from "./components/Home/Home";
 import Layout from './components/Layout/Layout';
+import Hostels from './components/Hostels/Hostels';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout/>}>
-      <Route path='' element={<Home/>}>
-        
-      </Route>
+      <Route path='' element={<Home/>}/>
+      <Route path='/hostels' element={<Hostels/>}/>
       
     </Route>
   )
