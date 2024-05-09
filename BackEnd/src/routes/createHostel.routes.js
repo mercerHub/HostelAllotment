@@ -3,6 +3,6 @@ import { createHostel } from "../controllers/createHostel.controller.js";
 
 const router = Router();
 
-router.route('/create/hostel').post(createHostel)
+router.route('/hostel/create').post(createHostel)
 
 export default router;

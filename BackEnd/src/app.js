@@ -23,11 +23,15 @@ app.use(cookieParser())
 import uploadRouter from "./routes/upload.routes.js"
 import createHostelRouter from "./routes/createHostel.routes.js"
 import allotHostelRouter from "./routes/allot.routes.js"
+import getHostelsRouter from "./routes/getHostels.routes.js"
+import getAllotmentRouter from "./routes/getAllotment.routes.js"
 
 // routes declaration
 
 app.use("/api/v1",uploadRouter);
 app.use("/api/v1/",createHostelRouter);
 app.use("/api/v1/",allotHostelRouter);
+app.use("/api/v1/",getAllotmentRouter);
+app.use("/api/v1/",getHostelsRouter)
 
 export default app;

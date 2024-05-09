@@ -6,6 +6,7 @@ import xlsx from "xlsx";
 import fs from "fs";
 
 const seedStudents = asyncHandler(async (req, res) => {
+    await Student.deleteMany({})
     try {
         const workbook = xlsx.readFile(req.files?.Sheet[0].path);
         const sheetName = workbook.SheetNames[0];
