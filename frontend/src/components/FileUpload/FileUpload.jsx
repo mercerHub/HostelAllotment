@@ -13,7 +13,7 @@ function FileUpload() {
     const upload = async () => {
         const formData = new FormData();
         formData.append('Sheet',file);
-        await axios.post(`${server}/upload`,formData)
+        await axios.post(`${server}upload`,formData)
         .then(res => {console.log(res)})
         .catch(err => console.log("Error !!",err));
         setIsUploading(true)
