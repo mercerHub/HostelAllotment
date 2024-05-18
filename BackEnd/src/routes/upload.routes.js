@@ -3,11 +3,12 @@ import { upload } from "../middlewares/multer.middleware.js";
 import { Router } from "express";
 
 const router = Router()
+let sheet = "Sheet";
 
 router.route("/upload").post(
     upload.fields([
         {
-            name: "Sheet",
+            name: sheet,
             maxCount: 1
         }
     ]),
