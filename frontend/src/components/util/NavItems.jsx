@@ -10,7 +10,7 @@ function NavItems({ content, goto, type }) {
 
   // Check screen size
   const checkScreenSize = () => {
-    setIsSmallScreen(window.innerWidth < 780); // Adjust this threshold as needed
+    setIsSmallScreen(window.innerWidth < 800); // Adjust this threshold as needed
   };
 
   // Add event listener for screen size changes
